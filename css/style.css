@@ -428,24 +428,23 @@ div.facebook-section{
     display: inline-block;
     padding: 0 10px;
     width: 555px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-top: 20px;
     float: left;
 }
 
-section h2{
+.content h2{
     color: #fff;
     text-transform: uppercase;
     font-size: 17px;
-    width: 150px;
-    height: 41px;
+    padding: 15px 20px;
+    min-width: 150px;
     display: inline-block;
-    line-height: 41px;
     text-align: center;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    margin: 0 0 0 20px;
+    margin: 0 0 20px 20px;
     position: relative;
 }
 
@@ -465,9 +464,7 @@ article p, article a {
     font-size: 13px;
     font-family: Arial;
 }
-article p{
-    margin-top: 20px;
-}
+
 article a{
     color: #df0000;
     margin-bottom: 20px;
@@ -502,9 +499,8 @@ article h2:before, .map-section h2:before{
 /*-----------------------map section-----------------------*/
 .map{
     width: 300px;
-    height: 254px;
+    height: 234px;
     background: url("../img/map.png") no-repeat;
-    margin-top: 20px;
     float: left;
     clear: left;
 }
@@ -515,27 +511,82 @@ article h2:before, .map-section h2:before{
 }
 
 .contacts{
-    margin: 20px 10px 0 18px;
-    width: 225px;
+    margin: 0 0 0 18px;
+    width: 230px;
     float: right;
 }
 
 .contacts p {
     font-size: 15px;
-    padding: 0 10px 0 48px;
+    padding: 0 0 0 48px;
     background: url("../img/poineter.png") top left no-repeat;
+    margin-bottom: 20px;
+}
+
+.contacts a {
+    color: #df0000;
+    font-size: 15px;
+    padding: 0 0 0 48px;
 }
 
 /*-----------------------right aside-----------------------*/
 .right-aside{
     float: right;
-    width: 225px;
+    width: 205px;
     padding: 0 10px;
 }
 
 .right-aside h2{
     background-color: #e4e4e4;
+    margin: 20px 0;
+    color: #7a7a7a;
+    position: relative;
 }
+
+.right-aside p{
+    color: #595959;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+
+
+.right-aside h2:after{
+    content: '';
+    display: inline-block;
+    background-color: #cbcbcb;
+    border-bottom: 1px solid #fff;
+    height: 1px;
+    width: 65px;
+    position: absolute;
+    top: 50%;
+    right: -65px;
+}
+
+.right-aside h2:before{
+    content: '';
+    display: inline-block;
+    background-color: #cbcbcb;
+    border-bottom: 1px solid #fff;
+    height: 1px;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+}
+
+/*-----------------------presentation-----------------------*/
+.content section.presentation{
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #2f2f2f;
+    width: 780px;
+}
+
+.presentation h2{
+    background-color: #464646;
+}
+
 
 
 
