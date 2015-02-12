@@ -390,9 +390,9 @@ li.twitter {
 
 /*-----------------------aside-----------------------*/
 div.content{
-    background-color: #f1eff1;
     width: 100%;
     display: inline-block;
+    background: url("../img/f_pre_bg.png") bottom repeat-x #f1eff1;
 }
 
 .sidebar{
@@ -534,11 +534,12 @@ article h2:before, .map-section h2:before{
     float: right;
     width: 205px;
     padding: 0 10px;
+    margin-top: 20px;
 }
 
 .right-aside h2{
     background-color: #e4e4e4;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
     color: #7a7a7a;
     position: relative;
 }
@@ -576,7 +577,7 @@ article h2:before, .map-section h2:before{
 
 /*-----------------------presentation-----------------------*/
 .content section.presentation{
-    margin: 0;
+    margin: 0 0 84px 0;
     padding-top: 15px;
     padding-bottom: 10px;
     background-color: #2f2f2f;
@@ -585,6 +586,55 @@ article h2:before, .map-section h2:before{
 
 .presentation h2{
     background-color: #464646;
+}
+
+section.presentation p {
+    font-size: 13px;
+    color: #a7a7a7;
+    margin: 0 230px 5px 0;
+}
+
+section.presentation a{
+    color: #fff;
+}
+
+section.presentation img {
+    float: left;
+    margin-right: 10px;
+}
+
+section.presentation ul {
+    float: right;
+    width: 220px;
+    padding-left: 10px;
+    border-left: 1px solid;
+}
+
+section.presentation ul li img {
+    float: left;
+    margin-right: 5px;
+    width: 60px;
+}
+
+.presentation-text-right{
+    float: right;
+    font-size: 12px;
+    width: 155px;
+}
+
+section.presentation ul li {
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+section.presentation ul li h3 {
+    color: #ffe400;
+    margin: 0 0 3px 0;
+    line-height: 0.8;
+}
+
+section.presentation ul li p {
+    margin: 0;
+    color: #fff;
 }
 
 
