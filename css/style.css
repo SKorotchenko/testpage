@@ -425,12 +425,12 @@ div.facebook-section{
 /*-----------------------section-----------------------*/
 
 .content section {
-    float: right;
     display: inline-block;
     padding: 0 10px;
-    width: 780px;
+    width: 555px;
     margin-bottom: 50px;
     margin-top: 20px;
+    float: left;
 }
 
 section h2{
@@ -481,10 +481,10 @@ article h2:after, .map-section h2:after{
     background-color: #cbcbcb;
     border-bottom: 1px solid #fff;
     height: 1px;
-    width: 375px;
+    width: 395px;
     position: absolute;
     top: 50%;
-    right: -375px;
+    right: -395px;
 }
 
 article h2:before, .map-section h2:before{
@@ -505,7 +505,13 @@ article h2:before, .map-section h2:before{
     height: 254px;
     background: url("../img/map.png") no-repeat;
     margin-top: 20px;
+    float: left;
+    clear: left;
+}
 
+.map-section h2 {
+    float: left;
+    clear: both;
 }
 
 .contacts{
@@ -523,6 +529,13 @@ article h2:before, .map-section h2:before{
 /*-----------------------right aside-----------------------*/
 .right-aside{
     float: right;
+    width: 225px;
+    padding: 0 10px;
 }
+
+.right-aside h2{
+    background-color: #e4e4e4;
+}
+
 
 
