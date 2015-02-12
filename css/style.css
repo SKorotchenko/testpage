@@ -25,8 +25,10 @@ ul{
 }
 
 .page{
+	overflow: hidden;
     width: 960px;
     margin: 0 auto;
+	font-family: Arial, Sans-serif;
 }
 
 /*---------------------------------------------------------------------------------------------------
@@ -99,7 +101,7 @@ form {
     float: right;
 }
 
-input[type="email"] {
+.top-search input[type="text"] {
     font-size: 12px;
     padding: 8px 0 8px 15px;
     width: 220px;
@@ -111,12 +113,13 @@ input[type="email"] {
     background-color: #fff;
 }
 
-input[type="submit"] {
+.top-search input[type="submit"] {
     border: none;
     background: url("../img/sing-btn-bg.png") no-repeat;
     width: 96px;
     height: 31px;
     color: #960000;
+	font-weight: bold;
     padding: 0;
     margin-left: 4px;
 }
@@ -200,6 +203,7 @@ section.header-main {
 
 .header-text-group p {
     font-size: 22px;
+	color: #595959;
 }
 
 .header-section {
@@ -277,6 +281,7 @@ span.big-number {
     background: url("../img/act-btn.png") no-repeat;
     width: 175px;
     height: 57px;
+	font-weight: bold;
     color: #960000;
     padding: 0;
     font-size: 27px;
@@ -311,6 +316,7 @@ span.big-number {
 
 .number {
     font-size: 37px;
+	font-weight: bold;
     color: #ffe400;
 }
 
