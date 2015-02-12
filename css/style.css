@@ -1,0 +1,528 @@
+html, body{
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/**{
+    outline: 1px solid aquamarine;
+}*/
+a, a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.page{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------------------------------------------------------
+-----------------------------------------------HEADER------------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+header{
+    width: 100%;
+    background: url("../img/h_bg.png") repeat-x;
+    background-size: auto 100%;
+    display: inline-block;
+}
+/*------------------------header top-------------------------------*/
+section.header-top {
+    float: right;
+    width: 812px;
+    position: relative;
+    margin-top: 67px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+
+nav ul li a{
+    font-size: 14px;
+    color: #fff;
+}
+
+.fb-login{
+    width: 69px;
+    height: 22px;
+    background: url("../img/fb-login.png") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+/*------------------------sing up panel-------------------------------*/
+.sing-up-panel {
+    clear: both;
+    float: right;
+    background: url("../img/singin-bg.png") no-repeat;
+    margin-bottom: 15px;
+    width: 750px;
+    padding: 30px 25px 20px 25px;
+}
+
+.sing-up-panel p {
+    color: #fff;
+    font-size: 22px;
+    display: inline-block;
+    float: left;
+    line-height: 1.5;
+}
+
+form {
+    display: inline-block;
+    float: right;
+}
+
+input[type="email"] {
+    font-size: 12px;
+    padding: 8px 0 8px 15px;
+    width: 220px;
+    box-shadow: inset 0px 0px 50px 0px #ABABAB;
+    -webkit-box-shadow: inset 0px 0px 10px 0px #ABABAB;
+    -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB;
+    -o-box-shadow: inset 0px 0px 50px 0px #ABABAB;
+    border: none;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    border: none;
+    background: url("../img/sing-btn-bg.png") no-repeat;
+    width: 96px;
+    height: 31px;
+    color: #960000;
+    padding: 0;
+    margin-left: 4px;
+}
+/*--------------------------------aside-------------------------------*/
+header aside {
+    font-size: 14px;
+    float: left;
+    clear: both;
+    width: 160px;
+}
+
+.last-deal {
+    width: 116px;
+    height: 98px;
+    background: url("../img/bg-white.png") no-repeat;
+    color: #960000;
+    font-size: 22px;
+    padding: 15px 21px 15px 9px;
+}
+
+.last-deal span {
+    font-size: 45px;
+}
+
+header aside ul {
+    margin-top: 25px;
+}
+
+header aside ul li {
+    margin-bottom: 1px;
+}
+
+header aside a{
+    color: #929292;
+    padding: 10px;
+    display: inline-block;
+    background-color: #2a2a2a;
+    font-size: 22px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+header aside ul li:last-child a {
+    color: #ffe400;
+}
+/*---------------------------header main-------------------------------*/
+section.header-main {
+    float: right;
+    display: inline-block;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 780px;
+    margin-bottom: 10px;
+}
+
+.header-section {
+    float: initial;
+}
+
+.header-text-group {
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.header-text-group h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.header-text-group p {
+    font-size: 22px;
+}
+
+.header-section {
+    display: inline-block;
+    width: 780px;
+    margin-bottom: 10px;
+}
+
+.header-section img {
+    float: left;
+}
+
+.action{
+    float: right;
+    width: 395px;
+    height: 263px;
+}
+
+.action-top-text {
+    display: inline-block;
+    width: 365px;
+    padding: 10px 10px 10px 20px;
+    background: url("../img/h_tx_bg.png") no-repeat;
+    background-size: 100%;
+    height: 28px;
+}
+
+.action-top-text p {
+    font-size: 14px;
+    float: left;
+    color: #9c9c9c;
+    line-height: 2;
+}
+
+.action-top-text span {
+    float: right;
+    font-size: 25px;
+    color: #9c9c9c;
+}
+
+.action-section {
+    clear: both;
+    width: 366px;
+    background-color: #2a2a2a;
+    float: right;
+    box-shadow: inset 0px 0px 50px 0px #000;
+    -webkit-box-shadow: inset 0px 0px 10px 0px #000;
+    -moz-box-shadow: inset 0px 0px 50px 0px #000;
+    -o-box-shadow: inset 0px 0px 50px 0px #000;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding: 10px;
+    height: 195px;
+}
+
+.action-top {
+    display: inline-block;
+    margin: 20px 0 20px 0;
+}
+
+span.big-number {
+    color: #fff;
+    font-size: 55px;
+    margin-left: 20px;
+    line-height: 57px;
+}
+
+.action-top input[type="button"] {
+    float: right;
+    border: none;
+    background: url("../img/act-btn.png") no-repeat;
+    width: 175px;
+    height: 57px;
+    color: #960000;
+    padding: 0;
+    font-size: 27px;
+    text-indent: 17px;
+}
+
+.action-top a {
+    display: inline-block;
+    font-size: 15px;
+    float: right;
+    color: #fff;
+    padding-left: 40px;
+    background: url("../img/present.png") left 12px center no-repeat;
+    margin-top: 15px;
+}
+
+.action-section ul{
+    clear: both;
+}
+
+.action-section li {
+    display: inline-block;
+    background-color: #212121;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    position: relative;
+}
+
+.number {
+    font-size: 37px;
+    color: #ffe400;
+}
+
+.text {
+    color: #9c9c9c;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.action-section li:first-child .text{
+    text-align: right;
+}
+
+.action-section li:after {
+    content: '';
+    width: 8px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: -9px;
+}
+
+.action-section li.last:after {
+    content: none;
+}
+
+/*---------------------------header bottom-------------------------------*/
+.header-bottom {
+    float: right;
+}
+
+.header-bottom p {
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.header-bottom p span {
+    color: #df0000;
+}
+
+.header-bottom ul {
+    display: inline-block;
+}
+
+.header-bottom li {
+    display: inline-block;
+    float: left;
+}
+
+li.facebook a {
+    background: url("../img/like.png") no-repeat;
+    height: 20px;
+    width: 76px;
+    display: inline-block;
+}
+
+li.twitter a {
+    background: url("../img/tweet.png") no-repeat;
+    height: 20px;
+    width: 96px;
+    display: inline-block;
+}
+
+li.twitter {
+    margin-right: 7px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------
+-----------------------------------------CONTENT-----------------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+
+/*-----------------------aside-----------------------*/
+div.content{
+    background-color: #f1eff1;
+    width: 100%;
+    display: inline-block;
+}
+
+.sidebar{
+    margin-top: 20px;
+    float: left;
+    width: 160px;
+}
+
+.iphone {
+    width: 151px;
+    height: 254px;
+    background: url("../img/iphone.png") no-repeat;
+    margin-bottom: 3px;
+}
+
+.appstore{
+    width: 150px;
+    height: 52px;
+    background: url("../img/appstore.png") no-repeat;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+div.facebook-section{
+    width: 150px;
+    height: 258px;
+    background: url("../img/facebok.png") no-repeat;
+}
+
+/*-----------------------section-----------------------*/
+
+.content section {
+    float: right;
+    display: inline-block;
+    padding: 0 10px;
+    width: 780px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+section h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 150px;
+    height: 41px;
+    display: inline-block;
+    line-height: 41px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0 0 0 20px;
+    position: relative;
+}
+
+/*-----------------------article-----------------------*/
+
+.content article, .map-section{
+    width: 555px;
+    float: left;
+}
+
+article h2, .map-section h2{
+    background-color: #960000;
+}
+
+article p, article a {
+    color: #000;
+    font-size: 13px;
+    font-family: Arial;
+}
+article p{
+    margin-top: 20px;
+}
+article a{
+    color: #df0000;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+article h2:after, .map-section h2:after{
+    content: '';
+    display: inline-block;
+    background-color: #cbcbcb;
+    border-bottom: 1px solid #fff;
+    height: 1px;
+    width: 375px;
+    position: absolute;
+    top: 50%;
+    right: -375px;
+}
+
+article h2:before, .map-section h2:before{
+    content: '';
+    display: inline-block;
+    background-color: #cbcbcb;
+    border-bottom: 1px solid #fff;
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+/*-----------------------map section-----------------------*/
+.map{
+    width: 300px;
+    height: 254px;
+    background: url("../img/map.png") no-repeat;
+    margin-top: 20px;
+
+}
+
+.contacts{
+    margin: 20px 10px 0 18px;
+    width: 225px;
+    float: right;
+}
+
+.contacts p {
+    font-size: 15px;
+    padding: 0 10px 0 48px;
+    background: url("../img/poineter.png") top left no-repeat;
+}
+
+/*-----------------------right aside-----------------------*/
+.right-aside{
+    float: right;
+}
+
+
