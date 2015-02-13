@@ -68,6 +68,7 @@ nav ul li {
 
 nav ul li a{
     font-size: 14px;
+	font-weight: bold;
     color: #fff;
 }
 
@@ -142,6 +143,7 @@ header aside {
 
 .last-deal span {
     font-size: 45px;
+	font-weight: bold;
 }
 
 header aside ul {
@@ -166,7 +168,8 @@ header aside a{
     border-bottom-left-radius: 5px;
 }
 
-header aside ul li:last-child a {
+header aside ul li a:hover,
+header aside ul li .active {
     color: #ffe400;
 }
 /*---------------------------header main-------------------------------*/
@@ -241,6 +244,7 @@ section.header-main {
 .action-top-text span {
     float: right;
     font-size: 25px;
+	font-weight: bold;
     color: #9c9c9c;
 }
 
@@ -447,6 +451,7 @@ div.facebook-section{
     min-width: 150px;
     display: inline-block;
     text-align: center;
+	font-weight: normal;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -524,6 +529,8 @@ article h2:before, .map-section h2:before{
 
 .contacts p {
     font-size: 15px;
+	line-height: 19px;
+	color: #7d7d7d;
     padding: 0 0 0 48px;
     background: url("../img/poineter.png") top left no-repeat;
     margin-bottom: 20px;
@@ -546,6 +553,7 @@ article h2:before, .map-section h2:before{
 .right-aside h2{
     background-color: #e4e4e4;
     margin: 0 0 20px 0;
+	font-weight: normal;
     color: #7a7a7a;
     position: relative;
 }
