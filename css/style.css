@@ -522,9 +522,14 @@ div.facebook-section{
     display: inline-block;
     text-align: center;
 	font-weight: normal;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Google Chrome */
+	-khtml-border-radius: 5px; /* KHTML */
+	-o-border-radius: 5px; /* Opera */
+	-ms-border-radius: 5px; /* IE8 */
+	-icab-border-radius: 5px; /* Icab */
+	border-radius: 5px; /* CSS3 */
+	behavior: url(border-radius.htc); /* IE */
     margin: 0 0 17px 20px;
     position: relative;
 }
