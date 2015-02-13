@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head lang="gr">
+<head lang="el">
     <meta charset="UTF-8">
     <title>Deal In</title>
     <link rel="stylesheet" href="css/style.css">
     <!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
 	<![endif]-->
 </head>
 <body>
     <header>
-        <div class="page">
+        <div class="wrapper">
             <section class="header-top">
                 <div class="logo">
 					<a href="#">
@@ -58,7 +57,7 @@
                     </p>
                 </div>
                 <div class="header-section">
-                    <img src="img/picture.png">
+                    <img src="img/picture.png" alt="Photo">
                     <div class="action">
                         <div class="action-top-text">
                             <p>Χρόνος που απομένει:</p>
@@ -91,10 +90,6 @@
                 </div>
                 <div class="header-bottom">
                     <p>* Σύστησε τους φίλους σου και κέρδισε! <span>Μάθε πως...</span></p>
-                    <!--<div class="social-likes">
-                        <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Like</div>
-                        <div class="twitter" title="Поделиться ссылкой в Твиттере">Tweet</div>
-                    </div>-->
                     <ul>
                         <li class="twitter">
                             <a></a>
@@ -105,10 +100,22 @@
                     </ul>
                 </div>
             </section>
-        </div><!--page-->
+            <!--
+br{
+    display: 0;
+    position, left/right/top/bottom, float, clear, z-index.
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style-type, overflow…
+    background, color, font…
+}-->
+        </div><!--wrapper-->
     </header><!--HEADER-->
     <div class="content">
-        <div class="page">
+        <div class="wrapper">
             <aside class="sidebar">
                 <div class="iphone"></div>
                 <a class="appstore"></a>
@@ -130,12 +137,12 @@
                     <div class="map"></div>
                     <div class="contacts">
                         <p>
-                            Allou! Fun Park Κηφισού & Πέτρου Ράλλη,
-                            Αγ. Ιωάννης Ρέντης
+                            Allou! Fun Park Κηφισού & Πέτρου Ράλλη,<br>
+                            Αγ. Ιωάννης Ρέντης<br>
                             τηλ.: 210 4256999
                         </p>
                         <a href="mailto:info@allou.gr">info@allou.gr</a>
-                        <a href="www.allou.gr">www.allou.gr</a>
+                        <a href="http://www.allou.gr">www.allou.gr</a>
                     </div>
                 </div>
             </section>
@@ -156,24 +163,24 @@
                     φίλους του να το γνωρίσουν, να παίξουν και να διασκεδάσουν με τη ψυχή τους στο πιο
                     μαγευτικό πάρκο της πόλης. <a>(περισσότερα)</a>
                 </p>
-                <img src="img/photo2.png">
+                <img src="img/photo2.png" alt="Kidom Fun Park">
                 <ul>
                     <li>
-                        <img src="img/icon.png" class="icon">
+                        <img src="img/icon.png" class="icon" alt="Kidom Fun Park Icon">
                         <div class="presentation-text-right">
                             <h3>Allou! Fun Park</h3>
                             <p>2 εισιτήρια για οποιαδήποτε προβολή σε όποιο Village Center θέλετε  με έκπτωση 25%</p>
                         </div>
                     </li>
                     <li>
-                        <img src="img/icon.png" class="icon">
+                        <img src="img/icon.png" class="icon" alt="Kidom Fun Park Icon">
                         <div class="presentation-text-right">
                             <h3>Allou! Fun Park</h3>
                             <p>2 εισιτήρια για οποιαδήποτε προβολή σε όποιο Village Center θέλετε  με έκπτωση 25%</p>
                         </div>
                     </li>
                     <li>
-                        <img src="img/icon.png" class="icon">
+                        <img src="img/icon.png" class="icon" alt="Kidom Fun Park Icon">
                         <div class="presentation-text-right">
                             <h3>Allou! Fun Park</h3>
                             <p>2 εισιτήρια για οποιαδήποτε προβολή σε όποιο Village Center θέλετε  με έκπτωση 25%</p>
@@ -184,15 +191,15 @@
         </div>
     </div><!--CONTENT-->
     <footer>
-        <div class="page">
+        <div class="wrapper">
             <ul class="info-graphic-menu">
                 <li>
-                    <h4>Πως</br>λειτουργεί;</h4>
+                    <h4>Πως<br>λειτουργεί;</h4>
                     <p class="how-it-works">Επικοινωνήστε μαζί μας και μάθετε τι μπορεί να κάνει το Dealin για εσάς! </p>
                     <a>Συχνές ερωτήσεις »</a>
                 </li>
                 <li>
-                    <h4>Έχετε</br>επιχείρηση;</h4>
+                    <h4>Έχετε<br>επιχείρηση;</h4>
                     <p class="business-proposition">Επικοινωνήστε μαζί μας και μάθετε τι μπορεί να κάνει το Dealin για εσάς! </p>
                     <a>Περισσότερες πληροφορίες »</a>
                 </li>

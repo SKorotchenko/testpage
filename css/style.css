@@ -1,13 +1,12 @@
 html, body{
     width: 100%;
-    font-size: 0;
-    margin: 0;
+    min-width: 1000px;
     padding: 0;
+    margin: 0;
+    font-size: 0;
+
 }
 
-/**{
-    outline: 1px solid aquamarine;
-}*/
 a, a:hover{
     text-decoration: none;
     cursor: pointer;
@@ -22,16 +21,17 @@ p{
 }
 
 ul{
-    list-style: none;
     padding: 0;
     margin: 0;
     font-size: 0;
+    list-style: none;
 }
 
-.page{
-	overflow: hidden;
+.wrapper{
+
     width: 960px;
     margin: 0 auto;
+    overflow: hidden;
 	font-family: Arial, Sans-serif;
 }
 
@@ -39,16 +39,17 @@ ul{
 -----------------------------------------------HEADER------------------------------------------------
 ----------------------------------------------------------------------------------------------------*/
 header{
+    display: inline-block;
     width: 100%;
     background: url("../img/h_bg.png") repeat-x;
     background-size: auto 100%;
-    display: inline-block;
+
 }
 /*------------------------header top-------------------------------*/
 section.header-top {
+    position: relative;
     float: right;
     width: 812px;
-    position: relative;
     margin-top: 67px;
     margin-bottom: 28px;
 }
@@ -71,9 +72,9 @@ nav ul li {
 }
 
 nav ul li a{
-    font-size: 14px;
-	font-weight: bold;
     color: #fff;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 nav ul li.last{
@@ -81,45 +82,45 @@ nav ul li.last{
 }
 
 .fb-login{
+    display: inline-block;
     width: 69px;
     height: 22px;
     background: url("../img/fb-login.png") no-repeat;
     background-size: 100%;
-    display: inline-block;
 }
 /*------------------------sing up panel-------------------------------*/
 .sing-up-panel {
+    position: relative;
     clear: both;
     float: right;
-    background-color: #960000;
     margin-bottom: 15px;
     width: 760px;
     padding: 20px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    position: relative;
+    background-color: #960000;
 }
 
 .sing-up-panel:before {
     content: '';
+    position: absolute;
+    top: -14px;
+    left: 23px;
     width: 0;
     height: 0;
     border-left: 17px solid transparent;
     border-right: 17px solid transparent;
     border-bottom: 14px solid #960000;
-    position: absolute;
-    top: -14px;
-    left: 23px;
 }
 
 .sing-up-panel p {
-    color: #fff;
-    font-size: 22px;
     display: inline-block;
     float: left;
-    line-height: 1.5;
     max-width: 409px;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 21px;
 }
 
 form {
@@ -128,67 +129,83 @@ form {
 }
 
 .top-search input[type="text"] {
-    font-size: 12px;
+    width: 225px;
     padding: 8px 0 8px 15px;
-    width: 220px;
-    box-shadow: inset 0px 0px 50px 0px #ABABAB;
-    -webkit-box-shadow: inset 0px 0px 10px 0px #ABABAB;
-    -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB;
-    -o-box-shadow: inset 0px 0px 50px 0px #ABABAB;
     border: none;
+    box-shadow: inset 0 0 10px 0 #ABABAB;
+    -webkit-box-shadow: inset 0 0 10px 0 #ABABAB;
+    -moz-box-shadow: inset 0 0 10px 0 #ABABAB;
+    -o-box-shadow: inset 0 0 10px 0 #ABABAB;
     background-color: #fff;
+    font-size: 12px;
 }
 
 .top-search input[type="submit"] {
-    border: none;
-    background: url("../img/sing-btn-bg.png") no-repeat;
     width: 96px;
     height: 31px;
-    color: #960000;
-    font-weight: bold;
     padding: 0;
     margin-left: 4px;
+    border: none;
+    background: url("../img/sing-btn-bg.png") no-repeat;
+    color: #960000;
+    font-weight: bold;
 }
+
+input[type="button"], input[type="submit"]{
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    color: #fff;
+}
+
+::-webkit-input-placeholder {color:#dda3a3;}
+::-moz-placeholder          {color:#dda3a3;}/* Firefox 19+ */
+:-moz-placeholder           {color:#dda3a3;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#dda3a3;}
+
 /*--------------------------------aside-------------------------------*/
 header aside {
-    font-size: 14px;
     float: left;
     clear: both;
     width: 160px;
+    font-size: 14px;
 }
 
 .last-deal {
+    position: relative;
     width: 116px;
-    background-color: #fff;
-    color: #960000;
-    font-size: 22px;
-    padding: 15px 9px;
-    margin-bottom: 25px;
+    padding: 11px 9px;
+    margin-bottom: 22px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    position: relative;
+    background-color: #fff;
+    color: #960000;
+    font-size: 21px;
 }
 
 .last-deal:after{
     content: '';
+    position: absolute;
+    right: -14px;
+    top: 20px;
     width: 0;
     height: 0;
     border-top: 17px solid transparent;
     border-left: 14px solid #fff;
     border-bottom: 17px solid transparent;
-    position: absolute;
-    right: -14px;
-    top: 20px;
 }
 
 .last-deal span {
     font-size: 45px;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .last-deal p,  .last-deal span {
     max-width: 116px;
+    margin-top: 7px;
 }
 
 header aside ul {
@@ -200,34 +217,37 @@ header aside ul li {
 }
 
 header aside a{
-    color: #929292;
-    padding: 10px;
     display: inline-block;
-    background-color: #2a2a2a;
-    font-size: 22px;
+    padding: 11px 10px;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-topleft: 5px;
     -moz-border-radius-bottomleft: 5px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    background-color: #2a2a2a;
+    color: #929292;
+    font-size: 21px;
 }
 
 header aside ul li a:hover,
 header aside ul li .active {
     color: #ffe400;
 }
+
 /*---------------------------header main-------------------------------*/
+
 section.header-main {
-    float: right;
     display: inline-block;
-    background-color: #fff;
+    float: right;
+    width: 780px;
+    padding: 10px;
+    margin-bottom: 10px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    padding: 10px;
-    width: 780px;
-    margin-bottom: 10px;
+    background-color: #fff;
+
 }
 
 .header-section {
@@ -236,22 +256,23 @@ section.header-main {
 
 .header-text-group {
     padding: 10px 20px;
-    background-color: #f2f2f2;
     margin-bottom: 10px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    background-color: #f2f2f2;
     color: #000;
 }
 
 .header-text-group h1 {
-    font-size: 35px;
     margin: 0;
+    line-height: 1;
+    font-size: 33px;
 }
 
 .header-text-group p {
-    font-size: 22px;
-	color: #595959;
+    color: #595959;
+    font-size: 20px;
 }
 
 .header-section {
@@ -266,7 +287,7 @@ section.header-main {
 
 .action{
     float: right;
-    width: 395px;
+    width: 398px;
 }
 
 .action-top-text {
@@ -279,24 +300,25 @@ section.header-main {
 }
 
 .action-top-text p {
-    font-size: 14px;
     float: left;
-    color: #9c9c9c;
     line-height: 2;
+    color: #9c9c9c;
+    font-size: 14px;
 }
 
 .action-top-text span {
     float: right;
     font-size: 25px;
-	font-weight: bold;
+    font-weight: bold;
     color: #9c9c9c;
 }
 
 .action-section {
+    float: right;
     clear: both;
     width: 366px;
-    background-color: #2a2a2a;
-    float: right;
+    padding: 10px 10px 0 10px;
+    margin-right: 3px;
     box-shadow: inset 0px 0px 50px 0px #000;
     -webkit-box-shadow: inset 0px 0px 10px 0px #000;
     -moz-box-shadow: inset 0px 0px 50px 0px #000;
@@ -307,50 +329,56 @@ section.header-main {
     -moz-border-radius-bottomleft: 2px;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
-    padding: 10px;
+    background-color: #2a2a2a;
 }
 
 .action-top {
     display: inline-block;
-    margin: 20px 0 20px 0;
+    margin: 24px 0 20px 0;
+    width: 366px;
 }
 
 span.big-number {
-    color: #fff;
-    font-size: 55px;
-    margin-left: 10px;
-    line-height: 57px;
     display: inline-block;
-    max-width: 170px;
+    margin-left: 10px;
+    max-width: 165px;
+    line-height: 64px;
+    color: #fff;
+    font-size: 52px;
 }
 
 .action-button {
     float: right;
-    width: 182px;
+    width: 176px;
     display: inline-block;
 }
 
 .action-button input[type="button"] {
     float: right;
-    border: none;
-    background: url("../img/act-btn.png") no-repeat;
     width: 175px;
     height: 57px;
-	font-weight: bold;
-    color: #960000;
     padding: 0;
-    font-size: 27px;
+    margin-bottom: 17px;
+    border: none;
+    background: url("../img/act-btn.png") no-repeat;
     text-indent: 17px;
+    font-weight: bold;
+    font-size: 27px;
+    color: #960000;
 }
+
+.action-button input[type="button"]:hover {
+    color: #fff;
+}
+
 
 .action-button a {
     display: inline-block;
-    font-size: 15px;
     float: right;
-    color: #fff;
     padding-left: 40px;
     background: url("../img/present.png") left 12px center no-repeat;
-    margin-top: 15px;
+    color: #fff;
+    font-size: 13px;
 }
 
 .action-section ul{
@@ -359,24 +387,25 @@ span.big-number {
 
 .action-section li {
     display: inline-block;
-    background-color: #212121;
+    position: relative;
+    margin-bottom: 9px;
+    margin-right: 10px;
+    padding: 5px 18px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    margin-right: 10px;
-    padding: 5px 10px;
+    background-color: #212121;
     text-align: center;
-    position: relative;
-    margin-bottom: 5px;
 }
 
 .number {
-    font-size: 37px;
-	font-weight: bold;
     color: #ffe400;
+    font-size: 31px;
+    font-weight: bold;
 }
 
 .text {
+    margin-bottom: 2px;
     color: #9c9c9c;
     text-transform: uppercase;
     font-size: 12px;
@@ -388,30 +417,29 @@ span.big-number {
 
 .action-section li:after {
     content: '';
-    width: 8px;
-    height: 1px;
-    background-color: #fff;
     display: inline-block;
     position: absolute;
     top: 50%;
     right: -9px;
+    width: 8px;
+    height: 1px;
+    background-color: #fff;
 }
 
 .action-section li.last:after {
     content: none;
 }
-
 /*---------------------------header bottom-------------------------------*/
 .header-bottom {
     float: right;
 }
 
 .header-bottom p {
-    font-size: 12px;
     display: inline-block;
     float: left;
-    line-height: 20px;
     margin-right: 15px;
+    line-height: 20px;
+    font-size: 12px;
 }
 
 .header-bottom p span {
@@ -428,17 +456,17 @@ span.big-number {
 }
 
 li.facebook a {
-    background: url("../img/like.png") no-repeat;
-    height: 20px;
-    width: 76px;
     display: inline-block;
+    width: 76px;
+    height: 20px;
+    background: url("../img/like.png") no-repeat;
 }
 
 li.twitter a {
-    background: url("../img/tweet.png") no-repeat;
-    height: 20px;
-    width: 96px;
     display: inline-block;
+    width: 96px;
+    height: 20px;
+    background: url("../img/tweet.png") no-repeat;
 }
 
 li.twitter {
@@ -450,7 +478,7 @@ li.twitter {
 -----------------------------------------CONTENT-----------------------------------------------------
 ----------------------------------------------------------------------------------------------------*/
 
-/*-----------------------aside-----------------------*/
+/*-----------------------aside sidebar-----------------------*/
 div.content{
     width: 100%;
     display: inline-block;
@@ -467,7 +495,7 @@ div.content{
     width: 151px;
     height: 254px;
     background: url("../img/iphone.png") no-repeat;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
 }
 
 .appstore{
@@ -475,7 +503,7 @@ div.content{
     height: 52px;
     background: url("../img/appstore.png") no-repeat;
     display: inline-block;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 div.facebook-section{
@@ -488,10 +516,10 @@ div.facebook-section{
 
 .content section {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 0 0 10px;
     width: 545px;
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 18px;
     float: left;
     overflow: hidden;
 }
@@ -500,19 +528,19 @@ div.facebook-section{
     color: #fff;
     text-transform: uppercase;
     font-size: 17px;
-    padding: 15px 20px;
-    min-width: 150px;
+    padding: 11px 20px;
+    min-width: 110px;
     display: inline-block;
     text-align: center;
-	font-weight: normal;
-	-moz-border-radius: 5px; /* Firefox */
-	-webkit-border-radius: 5px; /* Safari, Google Chrome */
-	-khtml-border-radius: 5px; /* KHTML */
-	-o-border-radius: 5px; /* Opera */
-	-ms-border-radius: 5px; /* IE8 */
-	-icab-border-radius: 5px; /* Icab */
-	border-radius: 5px; /* CSS3 */
-	behavior: url(border-radius.htc); /* IE */
+    font-weight: normal;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -icab-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(border-radius.htc);
     margin: 0 0 17px 20px;
     position: relative;
 }
@@ -532,13 +560,13 @@ article p, article a {
     color: #000;
     font-size: 13px;
     font-family: Arial;
+    line-height: 1.4;
 }
 
 article a{
     color: #df0000;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     display: inline-block;
-    margin-top: 8px;
 }
 
 article h2:after, .map-section h2:after{
@@ -547,10 +575,10 @@ article h2:after, .map-section h2:after{
     background-color: #cbcbcb;
     border-bottom: 1px solid #fff;
     height: 1px;
-    width: 335px;
+    width: 375px;
     position: absolute;
     top: 50%;
-    right: -335px;
+    right: -375px;
 }
 
 article h2:before, .map-section h2:before{
@@ -605,15 +633,15 @@ article h2:before, .map-section h2:before{
 /*-----------------------right aside-----------------------*/
 .right-aside{
     float: right;
-    width: 215px;
+    width: 220px;
     padding: 0 10px;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .right-aside h2{
     background-color: #e4e4e4;
-    margin: 0 0 20px 0;
-	font-weight: normal;
+    margin: 0 0 17px 0;
+    font-weight: normal;
     color: #7a7a7a;
     position: relative;
 }
@@ -631,10 +659,10 @@ article h2:before, .map-section h2:before{
     background-color: #cbcbcb;
     border-bottom: 1px solid #fff;
     height: 1px;
-    width: 65px;
+    width: 75px;
     position: absolute;
     top: 50%;
-    right: -65px;
+    right: -75px;
 }
 
 .right-aside h2:before{
@@ -651,9 +679,8 @@ article h2:before, .map-section h2:before{
 
 /*-----------------------presentation-----------------------*/
 .content section.presentation{
-    margin: 0 0 84px 0;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    margin: 0 0 95px 0;
+    padding: 15px 10px 10px 10px;
     background-color: #2f2f2f;
     width: 780px;
     -webkit-border-radius: 5px;
@@ -664,6 +691,7 @@ article h2:before, .map-section h2:before{
 
 .presentation h2{
     background-color: #464646;
+    font-size: 15px;
 }
 
 .presentation h2:after{
@@ -694,7 +722,8 @@ article h2:before, .map-section h2:before{
 section.presentation p {
     font-size: 13px;
     color: #a7a7a7;
-    margin: 0 230px 5px 0;
+    margin: 0 230px 3px 0;
+    line-height: 1.4;
 }
 
 section.presentation a{
@@ -740,17 +769,19 @@ section.presentation ul li img {
 
 section.presentation ul li {
     overflow: hidden;
-    margin-bottom: 28px;
+    margin-bottom: 35px;
 }
 section.presentation ul li h3 {
     color: #ffe400;
-    margin: 0 0 3px 0;
-    line-height: 0.8;
+    margin: 0;
+    line-height: 1;
+    font-size: 12px;
 }
 
 section.presentation ul li p {
     margin: 0;
     color: #fff;
+    line-height: 1;
 }
 
 /*---------------------------------------------------------------------------------------------------
@@ -767,7 +798,7 @@ footer p, footer a{
 }
 
 footer h4 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .info-graphic-menu li{
@@ -779,7 +810,8 @@ footer h4 {
 
 .info-graphic-menu p{
     padding: 0 35px 0 63px;
-    margin: 0 0 30px 0;
+    margin: 0 0 34px 0;
+    line-height: 1.3;
 }
 
 .how-it-works{
@@ -791,7 +823,8 @@ footer h4 {
 
 .info-graphic-menu h4{
     color: #d70202;
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
+    line-height: 1;
 }
 
 .info-graphic-menu a{
@@ -814,7 +847,8 @@ footer h4 {
 
 .footer-nav h4{
     color: #ffe400;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
+    line-height: 1;
 }
 
 .footer-nav-links li{
@@ -825,7 +859,9 @@ footer h4 {
     border-bottom: 1px solid #4f2a2b;
     display: inline-block;
     width: 225px;
-    padding: 10px 0 2px 0;
+    padding-top: 10px;
+    line-height: 1.4;
+    font-size: 15px;
 }
 
 
