@@ -50,7 +50,7 @@ section.header-top {
     width: 812px;
     position: relative;
     margin-top: 67px;
-    margin-bottom: 15px;
+    margin-bottom: 28px;
 }
 
 .logo {
@@ -67,13 +67,17 @@ nav {
 nav ul li {
     display: inline-block;
     vertical-align: middle;
-    padding: 5px 10px;
+    padding: 5px 6px;
 }
 
 nav ul li a{
     font-size: 14px;
 	font-weight: bold;
     color: #fff;
+}
+
+nav ul li.last{
+    padding-right: 0;
 }
 
 .fb-login{
@@ -106,7 +110,7 @@ nav ul li a{
     border-bottom: 14px solid #960000;
     position: absolute;
     top: -14px;
-    left: 20px;
+    left: 23px;
 }
 
 .sing-up-panel p {
