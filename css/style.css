@@ -89,7 +89,7 @@ nav ul li a{
     float: right;
     background-color: #960000;
     margin-bottom: 15px;
-    width: 750px;
+    width: 760px;
     padding: 20px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -126,7 +126,7 @@ form {
 .top-search input[type="text"] {
     font-size: 12px;
     padding: 8px 0 8px 15px;
-    width: 210px;
+    width: 220px;
     box-shadow: inset 0px 0px 50px 0px #ABABAB;
     -webkit-box-shadow: inset 0px 0px 10px 0px #ABABAB;
     -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB;
@@ -137,35 +137,13 @@ form {
 
 .top-search input[type="submit"] {
     border: none;
-    background: #ffe000;
+    background: url("../img/sing-btn-bg.png") no-repeat;
     width: 96px;
     height: 31px;
     color: #960000;
     font-weight: bold;
     padding: 0;
     margin-left: 4px;
-    moz-border-radius: 3px;
-    webkit-border-radius: 3px;
-    border-radius: 3px;
-}
-
-.btn{
-    position: relative;
-    display: inline-block;
-    margin-left: 5px;
-
-}
-
-.btn-circle {
-    width: 10px;
-    height: 10px;
-    background: #ffe000;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    margin-top: -5px;
 }
 /*--------------------------------aside-------------------------------*/
 header aside {
