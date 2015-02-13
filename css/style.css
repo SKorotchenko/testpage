@@ -480,22 +480,22 @@ li.twitter {
 
 /*-----------------------aside sidebar-----------------------*/
 div.content{
-    width: 100%;
     display: inline-block;
+    width: 100%;
     background: url("../img/f_pre_bg.png") bottom repeat-x #f1eff1;
 }
 
 .sidebar{
-    margin-top: 20px;
     float: left;
     width: 160px;
+    margin-top: 20px;
 }
 
 .iphone {
     width: 151px;
     height: 254px;
-    background: url("../img/iphone.png") no-repeat;
     margin-bottom: 1px;
+    background: url("../img/iphone.png") no-repeat;
 }
 
 .appstore{
