@@ -115,7 +115,7 @@ nav ul li a{
     display: inline-block;
     float: left;
     line-height: 1.5;
-    max-width: 403px;
+    max-width: 409px;
 }
 
 form {
@@ -314,7 +314,7 @@ section.header-main {
 span.big-number {
     color: #fff;
     font-size: 55px;
-    margin-left: 15px;
+    margin-left: 10px;
     line-height: 57px;
     display: inline-block;
     max-width: 170px;
@@ -485,10 +485,11 @@ div.facebook-section{
 .content section {
     display: inline-block;
     padding: 0 10px;
-    width: 555px;
+    width: 545px;
     margin-bottom: 40px;
     margin-top: 20px;
     float: left;
+    overflow: hidden;
 }
 
 .content h2{
@@ -514,10 +515,10 @@ div.facebook-section{
 
 /*-----------------------article-----------------------*/
 
-.content article, .map-section{
+/*.content article, .map-section{
     width: 555px;
     float: left;
-}
+}*/
 
 article h2, .map-section h2{
     background-color: #960000;
@@ -542,10 +543,10 @@ article h2:after, .map-section h2:after{
     background-color: #cbcbcb;
     border-bottom: 1px solid #fff;
     height: 1px;
-    width: 395px;
+    width: 335px;
     position: absolute;
     top: 50%;
-    right: -395px;
+    right: -335px;
 }
 
 article h2:before, .map-section h2:before{
@@ -575,7 +576,7 @@ article h2:before, .map-section h2:before{
 }
 
 .contacts{
-    margin: 0 0 0 18px;
+    margin: 0 0 0 15px;
     width: 230px;
     float: right;
 }
@@ -593,12 +594,14 @@ article h2:before, .map-section h2:before{
     color: #df0000;
     font-size: 15px;
     padding: 0 0 0 48px;
+    text-decoration: underline;
+    display: block;
 }
 
 /*-----------------------right aside-----------------------*/
 .right-aside{
     float: right;
-    width: 205px;
+    width: 215px;
     padding: 0 10px;
     margin-top: 20px;
 }
@@ -636,10 +639,10 @@ article h2:before, .map-section h2:before{
     background-color: #cbcbcb;
     border-bottom: 1px solid #fff;
     height: 1px;
-    width: 10px;
+    width: 20px;
     position: absolute;
     top: 50%;
-    left: -10px;
+    left: -20px;
 }
 
 /*-----------------------presentation-----------------------*/
@@ -652,11 +655,37 @@ article h2:before, .map-section h2:before{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .presentation h2{
     background-color: #464646;
 }
+
+.presentation h2:after{
+    content: '';
+    display: inline-block;
+    background-color: #000000;
+    border-bottom: 1px solid #444444;
+    height: 1px;
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    right: -550px;
+}
+
+.presentation h2:before{
+    content: '';
+    display: inline-block;
+    background-color: #000000;
+    border-bottom: 1px solid #444444;
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
 
 section.presentation p {
     font-size: 13px;
@@ -677,7 +706,20 @@ section.presentation ul {
     float: right;
     width: 220px;
     padding-left: 10px;
-    border-left: 1px solid;
+    /*border-left: 1px solid;*/
+    position: relative;
+}
+
+.presentation ul:before {
+    content: '';
+    display: inline-block;
+    background-color: #000000;
+    border-right: 1px solid #444444;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: -1px;
 }
 
 section.presentation ul li img {
