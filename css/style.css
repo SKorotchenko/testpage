@@ -450,7 +450,7 @@ div.facebook-section{
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    margin: 0 0 20px 20px;
+    margin: 0 0 17px 20px;
     position: relative;
 }
 
@@ -588,6 +588,9 @@ article h2:before, .map-section h2:before{
     padding-bottom: 10px;
     background-color: #2f2f2f;
     width: 780px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .presentation h2{
@@ -642,6 +645,82 @@ section.presentation ul li p {
     margin: 0;
     color: #fff;
 }
+
+/*---------------------------------------------------------------------------------------------------
+-----------------------------------------FOOTER-----------------------------------------------------
+----------------------------------------------------------------------------------------------------*/
+footer{
+    background: url("../img/f_bg.png") repeat-x;
+    background-size: auto 100%;
+}
+
+footer p, footer a{
+    font-size: 14px;
+    color: #fff;
+}
+
+footer h4 {
+    font-size: 24px;
+}
+
+.info-graphic-menu li{
+    display: inline-block;
+    width: 225px;
+    float: left;
+    margin: 30px 8px 0 7px;
+}
+
+.info-graphic-menu p{
+    padding: 0 35px 0 63px;
+    margin: 0 0 30px 0;
+}
+
+.how-it-works{
+    background: url('../img/f_icon1.png') left no-repeat;
+}
+.business-proposition{
+    background: url('../img/f_icon2.png') left no-repeat;
+}
+
+.info-graphic-menu h4{
+    color: #d70202;
+    margin: 0 0 5px 0;
+}
+
+.info-graphic-menu a{
+    padding: 7px 10px;
+    display: inline-block;
+    background-color: #d70202;
+    min-width: 200px;
+    text-align: left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0  0 60px 0;
+}
+
+.footer-nav li{
+    width: 225px;
+    float: left;
+    margin: 30px 8px 0 7px;
+}
+
+.footer-nav h4{
+    color: #ffe400;
+    margin: 0 0 15px 0;
+}
+
+.footer-nav-links li{
+    margin: 0;
+}
+
+.footer-nav-links li a{
+    border-bottom: 1px solid #4f2a2b;
+    display: inline-block;
+    width: 225px;
+    padding: 10px 0 2px 0;
+}
+
 
 
 
