@@ -1,0 +1,7 @@
+header{
+	/* IE8 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./img/h_bg_2.png',sizingMethod='scale')";
+	/* IE < 8 */
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='./img/h_bg_2.png', sizingMethod='scale');
+	background-image: none; /* IE ≤ 9.0 */
+}
