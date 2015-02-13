@@ -13,6 +13,10 @@ a, a:hover{
     cursor: pointer;
 }
 
+img{
+    border: none;
+}
+
 p{
     margin: 0;
 }
@@ -83,10 +87,26 @@ nav ul li a{
 .sing-up-panel {
     clear: both;
     float: right;
-    background: url("../img/singin-bg.png") no-repeat;
+    background-color: #960000;
     margin-bottom: 15px;
     width: 750px;
-    padding: 30px 25px 20px 25px;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.sing-up-panel:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-bottom: 14px solid #960000;
+    position: absolute;
+    top: -14px;
+    left: 20px;
 }
 
 .sing-up-panel p {
@@ -95,6 +115,7 @@ nav ul li a{
     display: inline-block;
     float: left;
     line-height: 1.5;
+    max-width: 403px;
 }
 
 form {
@@ -105,7 +126,7 @@ form {
 .top-search input[type="text"] {
     font-size: 12px;
     padding: 8px 0 8px 15px;
-    width: 220px;
+    width: 210px;
     box-shadow: inset 0px 0px 50px 0px #ABABAB;
     -webkit-box-shadow: inset 0px 0px 10px 0px #ABABAB;
     -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB;
@@ -116,13 +137,35 @@ form {
 
 .top-search input[type="submit"] {
     border: none;
-    background: url("../img/sing-btn-bg.png") no-repeat;
+    background: #ffe000;
     width: 96px;
     height: 31px;
     color: #960000;
-	font-weight: bold;
+    font-weight: bold;
     padding: 0;
     margin-left: 4px;
+    moz-border-radius: 3px;
+    webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+
+}
+
+.btn-circle {
+    width: 10px;
+    height: 10px;
+    background: #ffe000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
 }
 /*--------------------------------aside-------------------------------*/
 header aside {
@@ -134,11 +177,27 @@ header aside {
 
 .last-deal {
     width: 116px;
-    height: 98px;
-    background: url("../img/bg-white.png") no-repeat;
+    background-color: #fff;
     color: #960000;
     font-size: 22px;
-    padding: 15px 21px 15px 9px;
+    padding: 15px 9px;
+    margin-bottom: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.last-deal:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-left: 14px solid #fff;
+    border-bottom: 17px solid transparent;
+    position: absolute;
+    right: -14px;
+    top: 20px;
 }
 
 .last-deal span {
@@ -146,8 +205,12 @@ header aside {
 	font-weight: bold;
 }
 
+.last-deal p,  .last-deal span {
+    max-width: 116px;
+}
+
 header aside ul {
-    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 header aside ul li {
@@ -222,7 +285,6 @@ section.header-main {
 .action{
     float: right;
     width: 395px;
-    height: 263px;
 }
 
 .action-top-text {
@@ -264,7 +326,6 @@ section.header-main {
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
     padding: 10px;
-    height: 195px;
 }
 
 .action-top {
@@ -275,11 +336,19 @@ section.header-main {
 span.big-number {
     color: #fff;
     font-size: 55px;
-    margin-left: 20px;
+    margin-left: 15px;
     line-height: 57px;
+    display: inline-block;
+    max-width: 170px;
 }
 
-.action-top input[type="button"] {
+.action-button {
+    float: right;
+    width: 182px;
+    display: inline-block;
+}
+
+.action-button input[type="button"] {
     float: right;
     border: none;
     background: url("../img/act-btn.png") no-repeat;
@@ -292,7 +361,7 @@ span.big-number {
     text-indent: 17px;
 }
 
-.action-top a {
+.action-button a {
     display: inline-block;
     font-size: 15px;
     float: right;
@@ -316,6 +385,7 @@ span.big-number {
     padding: 5px 10px;
     text-align: center;
     position: relative;
+    margin-bottom: 5px;
 }
 
 .number {
