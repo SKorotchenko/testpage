@@ -43,10 +43,13 @@ ul {
 header {
     display: inline-block;
     width: 100%;
-    background: url("../img/header-bg.jpg") repeat;
-    /*background-size: auto 100%;*/
+    background: url("../img/header_bg_gradient.jpg") repeat-x;
+    background-size: auto 100%;
     margin-bottom: 20px;
+}
 
+.header-content-wrap {
+    background: url("../img/grid.png") repeat;
 }
 
 /*------------------------header top-------------------------------*/
@@ -803,8 +806,12 @@ section.presentation ul li p {
 -----------------------------------------FOOTER-----------------------------------------------------
 ----------------------------------------------------------------------------------------------------*/
 footer {
-    background: url("../img/f_bg.png") repeat-x;
+    background: url("../img/footer_gradient.png") repeat-x;
     background-size: auto 100%;
+}
+
+.footer-content-wrap{
+    background: url("../img/grid10.png") repeat;
 }
 
 footer p, footer a {
