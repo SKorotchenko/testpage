@@ -53,7 +53,7 @@ header {
 }
 
 /*------------------------header top-------------------------------*/
-section.header-top {
+.header-top {
     position: relative;
     float: right;
     width: 812px;
@@ -72,19 +72,19 @@ nav {
     right: 0;
 }
 
-nav ul li {
+nav li {
     display: inline-block;
     vertical-align: middle;
     padding: 5px 6px;
 }
 
-nav ul li a {
+nav a {
     color: #fff;
     font-size: 14px;
     font-weight: bold;
 }
 
-nav ul li.last {
+nav .last {
     padding-right: 0;
 }
 
@@ -131,7 +131,7 @@ nav ul li.last {
     font-size: 21px;
 }
 
-form {
+.top-search {
     display: inline-block;
     float: right;
 }
@@ -159,35 +159,36 @@ form {
     font-weight: bold;
 }
 
-input[type="button"], input[type="submit"] {
+.top-search input[type="button"],
+.top-search input[type="submit"] {
     outline: none;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.top-search input[type="submit"]:hover {
     color: #fff;
 }
 
-::-webkit-input-placeholder {
+.top-search ::-webkit-input-placeholder {
     color: #dda3a3;
 }
 
-::-moz-placeholder {
+.top-search ::-moz-placeholder {
     color: #dda3a3;
 }
 
 /* Firefox 19+ */
-:-moz-placeholder {
+.top-search :-moz-placeholder {
     color: #dda3a3;
 }
 
 /* Firefox 18- */
-:-ms-input-placeholder {
+.top-search :-ms-input-placeholder {
     color: #dda3a3;
 }
 
 /*--------------------------------aside-------------------------------*/
-header aside {
+.header-tab-menu{
     float: left;
     clear: both;
     width: 160px;
@@ -229,15 +230,15 @@ header aside {
     margin-top: 7px;
 }
 
-header aside ul {
+.tabs-navigation {
     margin-bottom: 10px;
 }
 
-header aside ul li {
+.tabs-navigation li {
     margin-bottom: 1px;
 }
 
-header aside a {
+.tabs-navigation a {
     display: inline-block;
     padding: 11px 10px;
     -webkit-border-top-left-radius: 5px;
@@ -251,14 +252,14 @@ header aside a {
     font-size: 21px;
 }
 
-header aside ul li a:hover,
-header aside ul li .active {
+.tabs-navigation a:hover,
+.tabs-navigation .active {
     color: #ffe400;
 }
 
-/*---------------------------header main-------------------------------*/
+/*---------------------------header action-------------------------------*/
 
-section.header-main {
+.header-action-block {
     display: inline-block;
     float: right;
     width: 780px;
@@ -271,11 +272,11 @@ section.header-main {
 
 }
 
-.header-section {
+.action {
     float: initial;
 }
 
-.header-text-group {
+.action-description {
     padding: 10px 20px;
     margin-bottom: 10px;
     -webkit-border-radius: 5px;
@@ -285,33 +286,33 @@ section.header-main {
     color: #000;
 }
 
-.header-text-group h1 {
+.action-description h1 {
     margin: 0;
     line-height: 1;
     font-size: 33px;
 }
 
-.header-text-group p {
+.action-description p {
     color: #595959;
     font-size: 20px;
 }
 
-.header-section {
+.action {
     display: inline-block;
     width: 780px;
     margin-bottom: 10px;
 }
 
-.header-section img {
+.action img {
     float: left;
 }
 
-.action {
+.action-content {
     float: right;
     width: 398px;
 }
 
-.action-top-text {
+.time-left {
     display: inline-block;
     width: 365px;
     padding: 10px 10px 10px 20px;
@@ -320,21 +321,21 @@ section.header-main {
     height: 28px;
 }
 
-.action-top-text p {
+.time-left p {
     float: left;
     line-height: 2;
     color: #9c9c9c;
     font-size: 14px;
 }
 
-.action-top-text span {
+.time-left span {
     float: right;
     font-size: 25px;
     font-weight: bold;
     color: #9c9c9c;
 }
 
-.action-section {
+.action-price-info {
     float: right;
     clear: both;
     width: 366px;
@@ -359,7 +360,7 @@ section.header-main {
     width: 366px;
 }
 
-span.big-number {
+.price {
     display: inline-block;
     margin-left: 10px;
     max-width: 165px;
@@ -368,13 +369,13 @@ span.big-number {
     font-size: 52px;
 }
 
-.action-button {
+.action-buttons {
     float: right;
     width: 176px;
     display: inline-block;
 }
 
-.action-button input[type="button"] {
+.action-buttons input[type="button"] {
     float: right;
     width: 175px;
     height: 57px;
@@ -388,11 +389,11 @@ span.big-number {
     color: #960000;
 }
 
-.action-button input[type="button"]:hover {
+.action-buttons input[type="button"]:hover {
     color: #fff;
 }
 
-.action-button a {
+.action-buttons a {
     display: inline-block;
     float: right;
     padding-left: 40px;
@@ -401,11 +402,11 @@ span.big-number {
     font-size: 13px;
 }
 
-.action-section ul {
+.marketing {
     clear: both;
 }
 
-.action-section li {
+.marketing li {
     display: inline-block;
     position: relative;
     margin-bottom: 9px;
@@ -418,24 +419,26 @@ span.big-number {
     text-align: center;
 }
 
-.number {
+.marketing .value {
+    display: block;
     color: #ffe400;
     font-size: 31px;
     font-weight: bold;
 }
 
-.text {
+.marketing .title {
+    display: block;
     margin-bottom: 2px;
     color: #9c9c9c;
     text-transform: uppercase;
     font-size: 12px;
 }
 
-.action-section li:first-child .text {
+.align-right{
     text-align: right;
 }
 
-.action-section li:after {
+.action-price-info li:after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -446,16 +449,16 @@ span.big-number {
     background-color: #fff;
 }
 
-.action-section li.last:after {
+.action-price-info li.last:after {
     content: none;
 }
 
-/*---------------------------header bottom-------------------------------*/
-.header-bottom {
+/*---------------------------header sharing-------------------------------*/
+.share {
     float: right;
 }
 
-.header-bottom p {
+.share p {
     display: inline-block;
     float: left;
     margin-right: 15px;
@@ -463,34 +466,34 @@ span.big-number {
     font-size: 12px;
 }
 
-.header-bottom p span {
+.share p a {
     color: #df0000;
 }
 
-.header-bottom ul {
+.social-likes {
     display: inline-block;
 }
 
-.header-bottom li {
+.social-likes li {
     display: inline-block;
     float: left;
 }
 
-li.facebook a {
+.facebook a {
     display: inline-block;
     width: 76px;
     height: 20px;
     background: url("../img/like.png") no-repeat;
 }
 
-li.twitter a {
+.twitter a {
     display: inline-block;
     width: 96px;
     height: 20px;
     background: url("../img/tweet.png") no-repeat;
 }
 
-li.twitter {
+.twitter {
     margin-right: 7px;
 }
 
@@ -499,7 +502,7 @@ li.twitter {
 ----------------------------------------------------------------------------------------------------*/
 
 /*-----------------------aside sidebar-----------------------*/
-div.content {
+.content {
     display: inline-block;
     width: 100%;
     background: url("../img/f_pre_bg.png") bottom repeat-x #f1eff1;
@@ -525,7 +528,7 @@ div.content {
     margin-bottom: 14px;
 }
 
-div.facebook-section {
+.facebook-section {
     width: 150px;
     height: 258px;
     background: url("../img/facebok.png") no-repeat;
@@ -695,7 +698,7 @@ article h2:before, .map-section h2:before {
 }
 
 /*-----------------------presentation-----------------------*/
-.content section.presentation {
+.content .offers-of-week {
     margin: 0 0 95px 0;
     padding: 15px 10px 10px 10px;
     background-color: #2f2f2f;
@@ -707,12 +710,12 @@ article h2:before, .map-section h2:before {
     float: right;
 }
 
-.presentation h2 {
+.offers-of-week h2 {
     background-color: #464646;
     font-size: 15px;
 }
 
-.presentation h2:after {
+.offers-of-week h2:after {
     content: '';
     display: inline-block;
     background-color: #000000;
@@ -724,7 +727,7 @@ article h2:before, .map-section h2:before {
     right: -550px;
 }
 
-.presentation h2:before {
+.offers-of-week h2:before {
     content: '';
     display: inline-block;
     background-color: #000000;
@@ -736,23 +739,23 @@ article h2:before, .map-section h2:before {
     left: -30px;
 }
 
-section.presentation p {
+.offers-of-week p {
     font-size: 13px;
     color: #a7a7a7;
     margin: 0 230px 3px 0;
     line-height: 1.4;
 }
 
-section.presentation a {
+.offers-of-week a {
     color: #fff;
 }
 
-section.presentation img {
+.offer-large-thumbnail {
     float: left;
     margin-right: 10px;
 }
 
-section.presentation ul {
+.offers-of-week ul {
     float: right;
     width: 220px;
     padding-left: 10px;
@@ -760,7 +763,7 @@ section.presentation ul {
     position: relative;
 }
 
-.presentation ul:before {
+.offers-of-week ul:before {
     content: '';
     display: inline-block;
     background-color: #000000;
@@ -772,34 +775,34 @@ section.presentation ul {
     left: -1px;
 }
 
-section.presentation ul li img {
+.offer-small-thumbnail {
     float: left;
     margin-right: 5px;
     width: 60px;
 }
 
-.presentation-text-right {
+.offer {
     float: right;
     font-size: 12px;
     width: 155px;
 }
 
-section.presentation ul li {
+.offers-of-week li {
     overflow: hidden;
     margin-bottom: 35px;
 }
 
-section.presentation ul li h3 {
+.offer h3 {
     color: #ffe400;
     margin: 0;
     line-height: 1;
     font-size: 12px;
 }
 
-section.presentation ul li p {
+.offer p {
     margin: 0;
     color: #fff;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 /*---------------------------------------------------------------------------------------------------
