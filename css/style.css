@@ -40,6 +40,7 @@ ul {
 /*---------------------------------------------------------------------------------------------------
 -----------------------------------------------HEADER------------------------------------------------
 ----------------------------------------------------------------------------------------------------*/
+
 header {
     display: inline-block;
     width: 100%;
@@ -53,6 +54,7 @@ header {
 }
 
 /*------------------------header top-------------------------------*/
+
 .header-top {
     position: relative;
     float: right;
@@ -97,6 +99,7 @@ nav .last {
 }
 
 /*------------------------sing up panel-------------------------------*/
+
 .sing-up-panel {
     position: relative;
     clear: both;
@@ -146,26 +149,48 @@ nav .last {
     -o-box-shadow: inset 0 0 10px 0 #ABABAB;
     background-color: #fff;
     font-size: 12px;
+    float: left;
 }
 
-.top-search input[type="submit"] {
-    width: 96px;
-    height: 31px;
-    padding: 0;
-    margin-left: 4px;
+.top-search .btn {
+    width: 62px;
+    padding: 7px 15px 6px 15px;
+    margin-left: 9px;
     border: none;
     background: url("../img/sing-btn-bg.png") no-repeat;
     color: #960000;
     font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+    background-size: auto 100%;
+    position: relative;
+    background: #ffe000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 2;
 }
 
-.top-search input[type="button"],
-.top-search input[type="submit"] {
+.top-search .btn:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #ffe000;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+    left: -7px;
+    z-index: 1;
+}
+
+.top-search input[type="button"] {
     outline: none;
     cursor: pointer;
 }
 
-.top-search input[type="submit"]:hover {
+.top-search .btn:hover {
     color: #fff;
 }
 
@@ -187,7 +212,8 @@ nav .last {
     color: #dda3a3;
 }
 
-/*--------------------------------aside-------------------------------*/
+/*--------------------------------header tab menu-------------------------------*/
+
 .header-tab-menu{
     float: left;
     clear: both;
@@ -341,10 +367,10 @@ nav .last {
     width: 366px;
     padding: 10px 10px 0 10px;
     margin-right: 3px;
-    box-shadow: inset 0px 0px 50px 0px #000;
-    -webkit-box-shadow: inset 0px 0px 10px 0px #000;
-    -moz-box-shadow: inset 0px 0px 50px 0px #000;
-    -o-box-shadow: inset 0px 0px 50px 0px #000;
+    box-shadow: inset 0 0 50px 0 #000;
+    -webkit-box-shadow: inset 0 0 10px 0 #000;
+    -moz-box-shadow: inset 0 0 50px 0 #000;
+    -o-box-shadow: inset 0 0 50px 0 #000;
     -webkit-border-bottom-right-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
     -moz-border-radius-bottomright: 2px;
@@ -371,29 +397,49 @@ nav .last {
 
 .action-buttons {
     float: right;
-    width: 176px;
+    width: 185px;
     display: inline-block;
 }
 
-.action-buttons input[type="button"] {
+.action-buy-btn {
     float: right;
-    width: 175px;
-    height: 57px;
-    padding: 0;
+    width: 151px;
     margin-bottom: 17px;
     border: none;
-    background: url("../img/act-btn.png") no-repeat;
-    text-indent: 17px;
     font-weight: bold;
     font-size: 27px;
     color: #960000;
+    padding: 11px 7px;
+    margin-left: 9px;
+    display: inline-block;
+    background-size: auto 100%;
+    position: relative;
+    background: #ffe000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 2;
 }
 
-.action-buttons input[type="button"]:hover {
+.action-buy-btn:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #ffe000;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 16px;
+    left: -11px;
+    z-index: 1;
+}
+
+.action-buy-btn:hover {
     color: #fff;
 }
 
-.action-buttons a {
+.present {
     display: inline-block;
     float: right;
     padding-left: 40px;
@@ -454,6 +500,7 @@ nav .last {
 }
 
 /*---------------------------header sharing-------------------------------*/
+
 .share {
     float: right;
 }
@@ -502,6 +549,7 @@ nav .last {
 ----------------------------------------------------------------------------------------------------*/
 
 /*-----------------------aside sidebar-----------------------*/
+
 .content {
     display: inline-block;
     width: 100%;
@@ -569,11 +617,6 @@ nav .last {
 
 /*-----------------------article-----------------------*/
 
-/*.content article, .map-section{
-    width: 555px;
-    float: left;
-}*/
-
 article h2, .map-section h2 {
     background-color: #960000;
 }
@@ -616,6 +659,7 @@ article h2:before, .map-section h2:before {
 }
 
 /*-----------------------map section-----------------------*/
+
 .map {
     width: 300px;
     height: 234px;
@@ -653,6 +697,7 @@ article h2:before, .map-section h2:before {
 }
 
 /*-----------------------right aside-----------------------*/
+
 .effect {
     float: right;
     width: 220px;
@@ -698,6 +743,7 @@ article h2:before, .map-section h2:before {
 }
 
 /*-----------------------presentation-----------------------*/
+
 .content .offers-of-week {
     margin: 0 0 95px 0;
     padding: 15px 10px 10px 10px;
@@ -759,7 +805,6 @@ article h2:before, .map-section h2:before {
     float: right;
     width: 220px;
     padding-left: 10px;
-    /*border-left: 1px solid;*/
     position: relative;
 }
 
@@ -772,7 +817,7 @@ article h2:before, .map-section h2:before {
     width: 1px;
     position: absolute;
     top: 0;
-    left: -1px;
+    left: -2px;
 }
 
 .offer-small-thumbnail {
@@ -808,6 +853,7 @@ article h2:before, .map-section h2:before {
 /*---------------------------------------------------------------------------------------------------
 -----------------------------------------FOOTER-----------------------------------------------------
 ----------------------------------------------------------------------------------------------------*/
+
 footer {
     background: url("../img/footer_gradient.png") repeat-x;
     background-size: auto 100%;
@@ -840,11 +886,11 @@ footer h4 {
 }
 
 .how-it-works {
-    background: url('../img/f_icon1.png') left no-repeat;
+    background: url('../img/f_icon1.png') left top 13px no-repeat;
 }
 
 .business-proposition {
-    background: url('../img/f_icon2.png') left no-repeat;
+    background: url('../img/f_icon2.png') left top 10px  no-repeat;
 }
 
 .info-graphic-menu h4 {
