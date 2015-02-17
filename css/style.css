@@ -1,47 +1,46 @@
-html, body{
+html, body {
     width: 100%;
     min-width: 1000px;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
     font-size: 0;
     background-color: #f1eff1;;
 }
 
-a, a:hover{
+a, a:hover {
     text-decoration: none;
     cursor: pointer;
 }
 
-img{
+img {
     border: none;
 }
 
-p{
+p {
     margin: 0;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
     font-size: 0;
     list-style: none;
 }
 
-.wrapper{
-
+.wrapper {
     width: 960px;
     margin: 0 auto;
     overflow: hidden;
-	font-family: Arial, Sans-serif;
+    font-family: Arial, Sans-serif;
 }
 
 /*---------------------------------------------------------------------------------------------------
 -----------------------------------------------HEADER------------------------------------------------
 ----------------------------------------------------------------------------------------------------*/
-header{
+header {
     display: inline-block;
     width: 100%;
     background: url("../img/header-bg.jpg") repeat;
@@ -49,6 +48,7 @@ header{
     margin-bottom: 20px;
 
 }
+
 /*------------------------header top-------------------------------*/
 section.header-top {
     position: relative;
@@ -75,23 +75,24 @@ nav ul li {
     padding: 5px 6px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     font-size: 14px;
     font-weight: bold;
 }
 
-nav ul li.last{
+nav ul li.last {
     padding-right: 0;
 }
 
-.fb-login{
+.fb-login {
     display: inline-block;
     width: 69px;
     height: 22px;
     background: url("../img/fb-login.png") no-repeat;
     background-size: 100%;
 }
+
 /*------------------------sing up panel-------------------------------*/
 .sing-up-panel {
     position: relative;
@@ -155,19 +156,32 @@ form {
     font-weight: bold;
 }
 
-input[type="button"], input[type="submit"]{
+input[type="button"], input[type="submit"] {
     outline: none;
     cursor: pointer;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     color: #fff;
 }
 
-::-webkit-input-placeholder {color:#dda3a3;}
-::-moz-placeholder          {color:#dda3a3;}/* Firefox 19+ */
-:-moz-placeholder           {color:#dda3a3;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#dda3a3;}
+::-webkit-input-placeholder {
+    color: #dda3a3;
+}
+
+::-moz-placeholder {
+    color: #dda3a3;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #dda3a3;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #dda3a3;
+}
 
 /*--------------------------------aside-------------------------------*/
 header aside {
@@ -190,7 +204,7 @@ header aside {
     font-size: 21px;
 }
 
-.last-deal:after{
+.last-deal:after {
     content: '';
     position: absolute;
     right: -14px;
@@ -207,7 +221,7 @@ header aside {
     font-weight: bold;
 }
 
-.last-deal p,  .last-deal span {
+.last-deal p, .last-deal span {
     max-width: 116px;
     margin-top: 7px;
 }
@@ -220,7 +234,7 @@ header aside ul li {
     margin-bottom: 1px;
 }
 
-header aside a{
+header aside a {
     display: inline-block;
     padding: 11px 10px;
     -webkit-border-top-left-radius: 5px;
@@ -289,7 +303,7 @@ section.header-main {
     float: left;
 }
 
-.action{
+.action {
     float: right;
     width: 398px;
 }
@@ -375,7 +389,6 @@ span.big-number {
     color: #fff;
 }
 
-
 .action-button a {
     display: inline-block;
     float: right;
@@ -385,7 +398,7 @@ span.big-number {
     font-size: 13px;
 }
 
-.action-section ul{
+.action-section ul {
     clear: both;
 }
 
@@ -415,7 +428,7 @@ span.big-number {
     font-size: 12px;
 }
 
-.action-section li:first-child .text{
+.action-section li:first-child .text {
     text-align: right;
 }
 
@@ -433,6 +446,7 @@ span.big-number {
 .action-section li.last:after {
     content: none;
 }
+
 /*---------------------------header bottom-------------------------------*/
 .header-bottom {
     float: right;
@@ -477,19 +491,18 @@ li.twitter {
     margin-right: 7px;
 }
 
-
 /*---------------------------------------------------------------------------------------------------
 -----------------------------------------CONTENT-----------------------------------------------------
 ----------------------------------------------------------------------------------------------------*/
 
 /*-----------------------aside sidebar-----------------------*/
-div.content{
+div.content {
     display: inline-block;
     width: 100%;
     background: url("../img/f_pre_bg.png") bottom repeat-x #f1eff1;
 }
 
-.sidebar{
+.sidebar {
     float: left;
     width: 160px;
 }
@@ -501,7 +514,7 @@ div.content{
     background: url("../img/iphone.png") no-repeat;
 }
 
-.appstore{
+.appstore {
     width: 150px;
     height: 52px;
     background: url("../img/appstore.png") no-repeat;
@@ -509,7 +522,7 @@ div.content{
     margin-bottom: 14px;
 }
 
-div.facebook-section{
+div.facebook-section {
     width: 150px;
     height: 258px;
     background: url("../img/facebok.png") no-repeat;
@@ -527,7 +540,7 @@ div.facebook-section{
     overflow: hidden;
 }
 
-.content h2{
+.content h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 17px;
@@ -555,7 +568,7 @@ div.facebook-section{
     float: left;
 }*/
 
-article h2, .map-section h2{
+article h2, .map-section h2 {
     background-color: #960000;
 }
 
@@ -566,13 +579,13 @@ article p, article a {
     line-height: 1.4;
 }
 
-article a{
+article a {
     color: #df0000;
     margin-bottom: 16px;
     display: inline-block;
 }
 
-article h2:after, .map-section h2:after{
+article h2:after, .map-section h2:after {
     content: '';
     display: inline-block;
     background-color: #cbcbcb;
@@ -584,7 +597,7 @@ article h2:after, .map-section h2:after{
     right: -375px;
 }
 
-article h2:before, .map-section h2:before{
+article h2:before, .map-section h2:before {
     content: '';
     display: inline-block;
     background-color: #cbcbcb;
@@ -597,7 +610,7 @@ article h2:before, .map-section h2:before{
 }
 
 /*-----------------------map section-----------------------*/
-.map{
+.map {
     width: 300px;
     height: 234px;
     background: url("../img/map.png") no-repeat;
@@ -610,7 +623,7 @@ article h2:before, .map-section h2:before{
     clear: both;
 }
 
-.contacts{
+.contacts {
     margin: 0 0 0 15px;
     width: 230px;
     float: right;
@@ -618,8 +631,8 @@ article h2:before, .map-section h2:before{
 
 .contacts p {
     font-size: 15px;
-	line-height: 19px;
-	color: #7d7d7d;
+    line-height: 19px;
+    color: #7d7d7d;
     padding: 0 0 0 48px;
     background: url("../img/poineter.png") top left no-repeat;
     margin-bottom: 20px;
@@ -634,13 +647,13 @@ article h2:before, .map-section h2:before{
 }
 
 /*-----------------------right aside-----------------------*/
-.right-aside{
+.effect {
     float: right;
     width: 220px;
     padding: 0 10px;
 }
 
-.right-aside h2{
+.effect h2 {
     background-color: #e4e4e4;
     margin: 0 0 17px 0;
     font-weight: normal;
@@ -648,14 +661,13 @@ article h2:before, .map-section h2:before{
     position: relative;
 }
 
-.right-aside p{
+.effect p {
     color: #595959;
     font-size: 14px;
     margin: 0 0 20px;
 }
 
-
-.right-aside h2:after{
+.effect h2:after {
     content: '';
     display: inline-block;
     background-color: #cbcbcb;
@@ -667,7 +679,7 @@ article h2:before, .map-section h2:before{
     right: -75px;
 }
 
-.right-aside h2:before{
+.effect h2:before {
     content: '';
     display: inline-block;
     background-color: #cbcbcb;
@@ -680,7 +692,7 @@ article h2:before, .map-section h2:before{
 }
 
 /*-----------------------presentation-----------------------*/
-.content section.presentation{
+.content section.presentation {
     margin: 0 0 95px 0;
     padding: 15px 10px 10px 10px;
     background-color: #2f2f2f;
@@ -692,12 +704,12 @@ article h2:before, .map-section h2:before{
     float: right;
 }
 
-.presentation h2{
+.presentation h2 {
     background-color: #464646;
     font-size: 15px;
 }
 
-.presentation h2:after{
+.presentation h2:after {
     content: '';
     display: inline-block;
     background-color: #000000;
@@ -709,7 +721,7 @@ article h2:before, .map-section h2:before{
     right: -550px;
 }
 
-.presentation h2:before{
+.presentation h2:before {
     content: '';
     display: inline-block;
     background-color: #000000;
@@ -721,7 +733,6 @@ article h2:before, .map-section h2:before{
     left: -30px;
 }
 
-
 section.presentation p {
     font-size: 13px;
     color: #a7a7a7;
@@ -729,7 +740,7 @@ section.presentation p {
     line-height: 1.4;
 }
 
-section.presentation a{
+section.presentation a {
     color: #fff;
 }
 
@@ -764,7 +775,7 @@ section.presentation ul li img {
     width: 60px;
 }
 
-.presentation-text-right{
+.presentation-text-right {
     float: right;
     font-size: 12px;
     width: 155px;
@@ -774,6 +785,7 @@ section.presentation ul li {
     overflow: hidden;
     margin-bottom: 35px;
 }
+
 section.presentation ul li h3 {
     color: #ffe400;
     margin: 0;
@@ -790,12 +802,12 @@ section.presentation ul li p {
 /*---------------------------------------------------------------------------------------------------
 -----------------------------------------FOOTER-----------------------------------------------------
 ----------------------------------------------------------------------------------------------------*/
-footer{
+footer {
     background: url("../img/f_bg.png") repeat-x;
     background-size: auto 100%;
 }
 
-footer p, footer a{
+footer p, footer a {
     font-size: 14px;
     color: #fff;
 }
@@ -804,33 +816,34 @@ footer h4 {
     font-size: 20px;
 }
 
-.info-graphic-menu li{
+.info-graphic-menu li {
     display: inline-block;
     width: 225px;
     float: left;
     margin: 30px 8px 0 7px;
 }
 
-.info-graphic-menu p{
+.info-graphic-menu p {
     padding: 0 35px 0 63px;
     margin: 0 0 34px 0;
     line-height: 1.3;
 }
 
-.how-it-works{
+.how-it-works {
     background: url('../img/f_icon1.png') left no-repeat;
 }
-.business-proposition{
+
+.business-proposition {
     background: url('../img/f_icon2.png') left no-repeat;
 }
 
-.info-graphic-menu h4{
+.info-graphic-menu h4 {
     color: #d70202;
     margin: 0 0 10px 0;
     line-height: 1;
 }
 
-.info-graphic-menu a{
+.info-graphic-menu a {
     padding: 7px 10px;
     display: inline-block;
     background-color: #d70202;
@@ -839,26 +852,26 @@ footer h4 {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    margin: 0  0 60px 0;
+    margin: 0 0 60px 0;
 }
 
-.footer-nav li{
+.footer-nav li {
     width: 225px;
     float: left;
     margin: 30px 8px 0 7px;
 }
 
-.footer-nav h4{
+.footer-nav h4 {
     color: #ffe400;
     margin: 0 0 10px 0;
     line-height: 1;
 }
 
-.footer-nav-links li{
+.footer-nav-links li {
     margin: 0;
 }
 
-.footer-nav-links li a{
+.footer-nav-links li a {
     border-bottom: 1px solid #4f2a2b;
     display: inline-block;
     width: 225px;
