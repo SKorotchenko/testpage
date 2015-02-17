@@ -1,10 +1,13 @@
 html, body{
     width: 100%;
     min-width: 1000px;
+}
+
+body{
     padding: 0;
     margin: 0;
     font-size: 0;
-
+    background-color: #f1eff1;;
 }
 
 a, a:hover{
@@ -41,8 +44,9 @@ ul{
 header{
     display: inline-block;
     width: 100%;
-    background: url("../img/h_bg.png") repeat-x;
-    background-size: auto 100%;
+    background: url("../img/header-bg.jpg") repeat;
+    /*background-size: auto 100%;*/
+    margin-bottom: 20px;
 
 }
 /*------------------------header top-------------------------------*/
@@ -129,8 +133,8 @@ form {
 }
 
 .top-search input[type="text"] {
-    width: 225px;
-    padding: 8px 0 8px 15px;
+    width: 210px;
+    padding: 8px 15px;
     border: none;
     box-shadow: inset 0 0 10px 0 #ABABAB;
     -webkit-box-shadow: inset 0 0 10px 0 #ABABAB;
@@ -488,7 +492,6 @@ div.content{
 .sidebar{
     float: left;
     width: 160px;
-    margin-top: 20px;
 }
 
 .iphone {
@@ -510,6 +513,7 @@ div.facebook-section{
     width: 150px;
     height: 258px;
     background: url("../img/facebok.png") no-repeat;
+    margin-bottom: 95px;
 }
 
 /*-----------------------section-----------------------*/
@@ -519,7 +523,6 @@ div.facebook-section{
     padding: 0 0 0 10px;
     width: 545px;
     margin-bottom: 40px;
-    margin-top: 18px;
     float: left;
     overflow: hidden;
 }
@@ -635,7 +638,6 @@ article h2:before, .map-section h2:before{
     float: right;
     width: 220px;
     padding: 0 10px;
-    margin-top: 18px;
 }
 
 .right-aside h2{
@@ -687,6 +689,7 @@ article h2:before, .map-section h2:before{
     -moz-border-radius: 5px;
     border-radius: 5px;
     overflow: hidden;
+    float: right;
 }
 
 .presentation h2{
